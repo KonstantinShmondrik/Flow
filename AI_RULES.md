@@ -84,7 +84,23 @@ Domain must not depend on:
 
 ---
 
-## 6. Persistence
+## 6. Architectural Decisions
+
+Agents must not make significant architectural changes without
+documenting the decision in an ADR.
+
+If an implementation requires changing an existing architectural
+decision, the agent must:
+
+1. identify the affected ADR;
+2. explain why the current decision is insufficient;
+3. propose the new decision;
+4. update or supersede the ADR;
+5. obtain human approval before implementation.
+
+---
+
+## 7. Persistence
 
 SwiftData is an infrastructure concern.
 
@@ -94,7 +110,7 @@ Persistence operations must go through the appropriate application/domain bounda
 
 ---
 
-## 7. AI
+## 8. AI
 
 AI is not trusted with direct persistence access.
 
@@ -110,7 +126,7 @@ AI must not bypass domain validation.
 
 ---
 
-## 8. User Control
+## 9. User Control
 
 AI-generated changes to the user's schedule must be explainable.
 
@@ -124,7 +140,7 @@ The application must distinguish between:
 
 ---
 
-## 9. Swift
+## 10. Swift
 
 Prefer:
 
@@ -146,7 +162,7 @@ Avoid:
 
 ---
 
-## 10. SwiftUI
+## 11. SwiftUI
 
 Prefer modern SwiftUI patterns.
 
@@ -159,7 +175,7 @@ Avoid:
 
 ---
 
-## 11. Testing
+## 12. Testing
 
 New business logic requires tests.
 
@@ -171,7 +187,7 @@ If a test appears incorrect, the agent must explain why.
 
 ---
 
-## 12. Dependencies
+## 13. Dependencies
 
 Do not add third-party dependencies without explicit approval.
 
@@ -181,7 +197,7 @@ A new dependency requires an architectural/product justification.
 
 ---
 
-## 13. Scope
+## 14. Scope
 
 Agents must not refactor unrelated code while implementing a feature.
 
@@ -193,7 +209,7 @@ If a broader refactor appears necessary:
 
 ---
 
-## 14. Code Review
+## 15. Code Review
 
 Before opening a PR, the implementation agent should verify:
 
@@ -208,7 +224,7 @@ Before opening a PR, the implementation agent should verify:
 
 ---
 
-## 15. Human Approval
+## 16. Human Approval
 
 The following require explicit human approval:
 
@@ -223,7 +239,7 @@ The following require explicit human approval:
 
 ---
 
-## 16. Agent Behavior
+## 17. Agent Behavior
 
 Agents should prefer:
 
@@ -242,7 +258,7 @@ Agents should not optimize for:
 
 ---
 
-## 17. Failure Handling
+## 18. Failure Handling
 
 If an agent cannot confidently implement a requirement:
 
@@ -257,7 +273,7 @@ It must not invent requirements.
 
 ---
 
-## 18. Principle
+## 19. Principle
 
 The goal is not to maximize autonomous coding.
 
