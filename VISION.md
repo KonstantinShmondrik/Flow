@@ -94,14 +94,28 @@ It should not feel:
 
 ## Long-Term Direction
 
-The long-term product should evolve from:
+Flow should evolve from a simple task manager into an adaptive personal planning assistant.
 
-Task manager
+The product should gradually move through several stages:
 
-→ planning assistant
+**Task management**  
+Help users capture, organize, and complete what needs to be done.
 
-→ adaptive personal planning system
+→
 
-→ intelligent personal context layer.
+**Planning assistance**  
+Help users turn their tasks, priorities, and available time into realistic plans.
 
-This evolution must remain user-controlled and privacy-conscious.
+→
+
+**Adaptive planning**  
+Continuously adjust plans when circumstances change, while keeping the user in control of important decisions.
+
+→
+
+**Personalized planning**  
+Use relevant information about the user's preferences, routines, commitments, and past planning behavior to make recommendations increasingly useful and realistic.
+
+The long-term goal is not to automate the user's life, but to build a system that understands enough of the user's planning context to provide meaningful assistance.
+
+The user remains in control of their data, plans, and decisions. Personal context should be transparent, limited to what is useful for planning, and manageable by the user.
