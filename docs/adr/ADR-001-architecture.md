@@ -240,8 +240,8 @@ The Domain must remain independent of Infrastructure.
 Conceptually:
 
     ┌──────────────────────────┐
-    │        Features         │
-    │   SwiftUI + Observation │
+    │        Features          │
+    │   SwiftUI + Observation  │
     └────────────┬─────────────┘
                  │
                  ▼
