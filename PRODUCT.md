@@ -139,7 +139,7 @@ The MVP AI capabilities are:
 3. Daily planning.
 4. Rescheduling suggestions.
 
-AI output must be structured and validated before entering the domain layer.
+AI output must be structured and validated before being processed by application operations.
 
 ---
 
@@ -221,13 +221,13 @@ The intended flow is:
 User input
 → AI interpretation
 → structured result
-→ domain validation
-→ domain use case
+→ Application operation
+→ Domain validation
 → persistence
 
 AI must never directly modify persistence.
 
-AI tools must call domain use cases.
+AI tools must invoke application operations.
 
 ---
 
