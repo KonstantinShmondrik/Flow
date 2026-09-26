@@ -6,7 +6,7 @@ Flow helps users turn tasks, intentions, and constraints into a realistic daily 
 
 ## Project Status
 
-🚧 Early development — Phase 0: Product & Engineering Foundation
+🚧 Early development — Phase 1: Application Foundation
 
 ## Vision
 
