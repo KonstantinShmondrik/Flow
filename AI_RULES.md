@@ -68,8 +68,8 @@ Agents must preserve architectural boundaries.
 
 Dependency direction:
 
-UI
-→ Application/Use Cases
+Features
+→ Application
 → Domain
 
 Infrastructure may implement domain/application interfaces.
@@ -119,7 +119,7 @@ AI must interact with the application through explicit tools.
 Tool calls must:
 
 1. validate input;
-2. execute domain logic;
+2. execute the appropriate application operation;
 3. return structured results.
 
 AI must not bypass domain validation.
