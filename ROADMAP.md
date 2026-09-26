@@ -60,7 +60,7 @@ Technology focus:
 - SwiftData
 - domain modeling
 - repositories
-- use cases
+- application operations
 - Swift Testing
 
 Deliverables:
