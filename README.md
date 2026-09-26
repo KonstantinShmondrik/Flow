@@ -50,6 +50,13 @@ AI agents participate in:
 
 Human decisions remain the final authority for product, architecture, and release.
 
+## Architecture
+
+Flow uses a feature-oriented architecture with explicit
+Application, Domain, and Infrastructure boundaries.
+
+See [ADR-001](docs/adr/ADR-001-architecture.md) for the full decision.
+
 ## Documentation
 
 | Document | Purpose |
@@ -60,6 +67,8 @@ Human decisions remain the final authority for product, architecture, and releas
 | [ROADMAP.md](ROADMAP.md) | Development roadmap |
 | [DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md) | Engineering quality criteria |
 | [AI_RULES.md](AI_RULES.md) | Rules for AI agents |
+| [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md) | Git workflow |
+| [docs/adr/ADR-001-architecture.md](docs/adr/ADR-001-architecture.md) | Initial architecture decision |
 
 ## License
 
