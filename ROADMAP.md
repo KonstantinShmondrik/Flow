@@ -25,6 +25,8 @@ Status: Completed
 
 ## Phase 1 — Application Foundation
 
+Status: In Progress
+
 Goal:
 
 Create the initial iOS application architecture.
