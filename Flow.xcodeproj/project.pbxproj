@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		A10000000000000000000001 /* FlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* FlowApp.swift */; };
 		A10000000000000000000002 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* TodayView.swift */; };
+		A10000000000000000000003 /* FlowDesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* FlowDesignTokens.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A20000000000000000000001 /* FlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowApp.swift; sourceTree = "<group>"; };
 		A20000000000000000000002 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		A20000000000000000000003 /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000004 /* FlowDesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDesignTokens.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,12 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		A40000000000000000000011 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (A20000000000000000000004 /* FlowDesignTokens.swift */,);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
 		A40000000000000000000009 /* Today */ = {
 			isa = PBXGroup;
 			children = (A20000000000000000000002 /* TodayView.swift */,);
@@ -66,7 +74,7 @@
 		A40000000000000000000005 /* Application */ = {isa = PBXGroup; children = (); path = Application; sourceTree = "<group>"; };
 		A40000000000000000000006 /* Domain */ = {isa = PBXGroup; children = (); path = Domain; sourceTree = "<group>"; };
 		A40000000000000000000007 /* Infrastructure */ = {isa = PBXGroup; children = (); path = Infrastructure; sourceTree = "<group>"; };
-		A40000000000000000000008 /* Shared */ = {isa = PBXGroup; children = (); path = Shared; sourceTree = "<group>"; };
+		A40000000000000000000008 /* Shared */ = {isa = PBXGroup; children = (A40000000000000000000011 /* DesignSystem */,); path = Shared; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,7 +117,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A30000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001 /* FlowApp.swift in Sources */, A10000000000000000000002 /* TodayView.swift in Sources */,); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001 /* FlowApp.swift in Sources */, A10000000000000000000002 /* TodayView.swift in Sources */, A10000000000000000000003 /* FlowDesignTokens.swift in Sources */,); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
