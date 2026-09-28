@@ -1,0 +1,128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* FlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* FlowApp.swift */; };
+		A10000000000000000000002 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* TodayView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* FlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* Flow */,
+				A20000000000000000000003 /* Flow.app */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000003 /* App */,
+				A40000000000000000000004 /* Features */,
+				A40000000000000000000005 /* Application */,
+				A40000000000000000000006 /* Domain */,
+				A40000000000000000000007 /* Infrastructure */,
+				A40000000000000000000008 /* Shared */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (A20000000000000000000001 /* FlowApp.swift */,);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000009 /* Today */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* Today */ = {
+			isa = PBXGroup;
+			children = (A20000000000000000000002 /* TodayView.swift */,);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Application */ = {isa = PBXGroup; children = (); path = Application; sourceTree = "<group>"; };
+		A40000000000000000000006 /* Domain */ = {isa = PBXGroup; children = (); path = Domain; sourceTree = "<group>"; };
+		A40000000000000000000007 /* Infrastructure */ = {isa = PBXGroup; children = (); path = Infrastructure; sourceTree = "<group>"; };
+		A40000000000000000000008 /* Shared */ = {isa = PBXGroup; children = (); path = Shared; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* Flow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000000000000000000002 /* Build configuration list for PBXNativeTarget "Flow" */;
+			buildPhases = (
+				A30000000000000000000002 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A30000000000000000000003 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = Flow;
+			productName = Flow;
+			productReference = A20000000000000000000003 /* Flow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2700; LastUpgradeCheck = 2700; TargetAttributes = {A50000000000000000000001 = {CreatedOnToolsVersion = 27.0; }; }; };
+			buildConfigurationList = A80000000000000000000001 /* Build configuration list for PBXProject "Flow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base,);
+			mainGroup = A40000000000000000000001;
+			productRefGroup = A40000000000000000000001;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A50000000000000000000001 /* Flow */,);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001 /* FlowApp.swift in Sources */, A10000000000000000000002 /* TodayView.swift in Sources */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A70000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.0; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; }; name = Debug; };
+		A70000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.0; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; }; name = Release; };
+		A70000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Flow; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; IPHONEOS_DEPLOYMENT_TARGET = 26.0; PRODUCT_BUNDLE_IDENTIFIER = com.konstantinshmondrik.Flow; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+		A70000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Flow; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; IPHONEOS_DEPLOYMENT_TARGET = 26.0; PRODUCT_BUNDLE_IDENTIFIER = com.konstantinshmondrik.Flow; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000000000000000000001 /* Build configuration list for PBXProject "Flow" */ = {isa = XCConfigurationList; buildConfigurations = (A70000000000000000000001 /* Debug */, A70000000000000000000002 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A80000000000000000000002 /* Build configuration list for PBXNativeTarget "Flow" */ = {isa = XCConfigurationList; buildConfigurations = (A70000000000000000000003 /* Debug */, A70000000000000000000004 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A60000000000000000000001 /* Project object */;
+}
