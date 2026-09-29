@@ -8,6 +8,5 @@ struct TodayView: View {
             .accessibilityAddTraits(.isHeader)
             .padding(FlowSpacing.pageInset)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-            .background(FlowColors.background.ignoresSafeArea())
     }
 }
