@@ -58,7 +58,7 @@ Agents must:
 - work on a dedicated branch;
 - keep commits focused;
 - avoid unrelated modifications;
-- create a PR for completed work.
+- create a PR for completed work, explicitly linking it to the implemented Issue as defined in `docs/GIT_WORKFLOW.md`.
 
 ---
 
