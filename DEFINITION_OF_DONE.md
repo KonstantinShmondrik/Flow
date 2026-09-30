@@ -65,6 +65,7 @@ A task is considered Done only when all applicable criteria are satisfied.
 - [ ] Changes are committed on the appropriate branch.
 - [ ] Commit messages are meaningful.
 - [ ] PR description explains the change.
+- [ ] The implementation PR uses GitHub closing syntax for the Issue it implements (for example, `Closes #7`), and GitHub recognizes the link before review.
 - [ ] CI passes.
 
 ## Review
@@ -72,6 +73,7 @@ A task is considered Done only when all applicable criteria are satisfied.
 - [ ] AI code review completed.
 - [ ] Human review completed.
 - [ ] All review comments resolved or explicitly accepted.
+- [ ] When simulator verification produces meaningful visual or behavioral evidence, successful evidence is attached directly to the corresponding GitHub Issue before the implementation is ready for review.
 
 ---
 

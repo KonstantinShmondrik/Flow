@@ -95,6 +95,18 @@ A Pull Request should contain:
 The PR should normally correspond to one Issue or one clearly defined
 piece of work.
 
+### Issue ↔ Pull Request Linking
+
+Every implementation PR must be explicitly linked to the GitHub Issue it implements.
+
+- Include the correct issue number in the PR description using GitHub's closing syntax, such as `Closes #7`.
+- Branch names, PR titles, commit messages, and comments alone do not establish this link.
+- Before considering the implementation ready for review, verify that GitHub recognizes the PR as linked to the intended Issue. If it does not, fix the PR description and verify the link again.
+
+A PR must not be considered ready for review until GitHub recognizes the link.
+
+This rule is separate from verification evidence. Meaningful simulator screenshots or recordings belong on the GitHub Issue as described in `AI_RULES.md`; a PR description that summarizes verification does not replace attaching that evidence to the Issue.
+
 ---
 
 ## 7. Review

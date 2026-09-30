@@ -58,7 +58,7 @@ Agents must:
 - work on a dedicated branch;
 - keep commits focused;
 - avoid unrelated modifications;
-- create a PR for completed work.
+- create a PR for completed work, explicitly linking it to the implemented Issue as defined in `docs/GIT_WORKFLOW.md`.
 
 ---
 
@@ -184,6 +184,16 @@ Bug fixes require regression tests.
 Agents must not modify tests merely to make failing code pass.
 
 If a test appears incorrect, the agent must explain why.
+
+### Visual Verification Evidence
+
+When an implementation task is verified using the iOS Simulator and visual or behavioral evidence meaningfully demonstrates that its acceptance criteria are satisfied, capture successful screenshots and/or screen recordings and attach them directly to the GitHub Issue being implemented.
+
+Use screenshots to show static UI states. Use screen recordings when interaction, navigation, or a sequence of actions is important to demonstrate. Select only evidence that directly supports relevant acceptance criteria.
+
+Keep evidence reasonably sized for viewing in the Issue. Resize or optimize it when appropriate while preserving readability and verification quality. Avoid unnecessary or duplicate attachments.
+
+Do not create screenshots or recordings solely to provide an attachment when visual evidence has no meaningful value for the task. Evidence should be attached before the implementation is considered ready for review; placing it only in a PR discussion does not satisfy this rule.
 
 ---
 
