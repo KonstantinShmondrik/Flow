@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    name: Build and test
+    runs-on: macos-26
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build and test Flow
+        run: >-
+          xcodebuild test
+          -project Flow.xcodeproj
+          -scheme Flow
+          -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2'
+          CODE_SIGNING_ALLOWED=NO
