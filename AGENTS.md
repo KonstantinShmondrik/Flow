@@ -4,7 +4,7 @@ Before repository work, read and follow [`AI_RULES.md`](AI_RULES.md). It is the 
 
 ## Before implementation
 
-- Read the current GitHub Issue, including its scope and acceptance criteria.
+- Before any GitHub Issue operation, follow the browser-only procedure in the `GitHub Issue Management` section of [`AI_RULES.md`](AI_RULES.md). Read the current Issue, including its scope and acceptance criteria, through the GitHub website.
 - Follow the Source of Truth order in `AI_RULES.md` and consult documents relevant to the task: `PRODUCT.md`, `VISION.md`, `PERSONAS.md`, and `ROADMAP.md` for product context and scope; `DEFINITION_OF_DONE.md` for completion criteria; applicable ADRs for architecture; and `docs/GIT_WORKFLOW.md` for branches, commits, and PRs. Do not reread every document when it is not relevant.
 - Inspect existing code and project conventions before introducing abstractions or changing architecture.
 

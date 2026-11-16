@@ -66,6 +66,7 @@ See [ADR-001](docs/adr/ADR-001-architecture.md) for the full decision.
 | [PERSONAS.md](PERSONAS.md) | Target users |
 | [ROADMAP.md](ROADMAP.md) | Development roadmap |
 | [DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md) | Engineering quality criteria |
+| [AGENTS.md](AGENTS.md) | Entry point for AI agent instructions |
 | [AI_RULES.md](AI_RULES.md) | Rules for AI agents |
 | [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md) | Git workflow |
 | [docs/adr/ADR-001-architecture.md](docs/adr/ADR-001-architecture.md) | Initial architecture decision |
