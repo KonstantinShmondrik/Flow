@@ -50,6 +50,27 @@ If requirements are ambiguous, the agent must ask for clarification.
 
 ---
 
+## GitHub Issue Management
+
+All GitHub Issue management must be performed through the GitHub website in
+a browser. This includes creating, editing, closing, labeling, assigning,
+setting milestones, and managing parent/sub-issue relationships.
+
+Before creating an Issue, search the repository through the website for an
+equivalent Issue. If an operation's result is ambiguous, inspect GitHub
+before retrying. After each operation, inspect the resulting Issue page to
+verify the change and record the actual Issue number and URL.
+
+Agents must not use the GitHub REST or GraphQL APIs, GitHub CLI, MCP GitHub
+tools or other GitHub connectors, scripts, HTTP requests, or other automated
+methods to manage Issues. Do not try an automated method before using the
+browser. If browser access is unavailable, stop and report the limitation.
+
+This rule applies to Issue operations only; it does not restrict unrelated
+Git operations or pull request review operations.
+
+---
+
 ## 4. Git
 
 Agents must:
