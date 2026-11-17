@@ -25,7 +25,7 @@ Status: Completed
 
 ## Phase 1 — Application Foundation
 
-Status: In Progress
+Status: Completed
 
 Goal:
 
@@ -52,6 +52,8 @@ Deliverables:
 ---
 
 ## Phase 2 — Local Domain
+
+Status: In Progress
 
 Goal:
 
