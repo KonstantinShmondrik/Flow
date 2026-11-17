@@ -12,6 +12,10 @@ struct Project: Equatable, Sendable {
     let id: ProjectID
     var name: String
 
+    static func == (lhs: Project, rhs: Project) -> Bool {
+        lhs.id == rhs.id
+    }
+
     init(id: ProjectID = ProjectID(), name: String) {
         self.id = id
         self.name = name

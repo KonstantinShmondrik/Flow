@@ -42,6 +42,10 @@ struct Task: Equatable, Sendable {
     var notes: String?
     var isCompleted: Bool
 
+    static func == (lhs: Task, rhs: Task) -> Bool {
+        lhs.id == rhs.id
+    }
+
     init(
         id: TaskID = TaskID(),
         title: String,

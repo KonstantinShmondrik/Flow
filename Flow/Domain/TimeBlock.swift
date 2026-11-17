@@ -29,7 +29,11 @@ enum ScheduledIntervalError: Error, Equatable {
 struct TimeBlock: Equatable, Sendable {
     let id: TimeBlockID
     let taskID: TaskID
-    let interval: ScheduledInterval
+    var interval: ScheduledInterval
+
+    static func == (lhs: TimeBlock, rhs: TimeBlock) -> Bool {
+        lhs.id == rhs.id
+    }
 
     init(id: TimeBlockID = TimeBlockID(), taskID: TaskID, interval: ScheduledInterval) {
         self.id = id
