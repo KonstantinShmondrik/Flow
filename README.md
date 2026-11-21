@@ -70,6 +70,7 @@ See [ADR-001](docs/adr/ADR-001-architecture.md) for the full decision.
 | [AI_RULES.md](AI_RULES.md) | Rules for AI agents |
 | [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md) | Git workflow |
 | [docs/adr/ADR-001-architecture.md](docs/adr/ADR-001-architecture.md) | Initial architecture decision |
+| [docs/adr/ADR-002-daily-planning-and-scheduling-model.md](docs/adr/ADR-002-daily-planning-and-scheduling-model.md) | ADR-002 — Daily Planning Model |
 
 ## License
 

@@ -81,6 +81,16 @@ Agents must:
 - avoid unrelated modifications;
 - create a PR for completed work, explicitly linking it to the implemented Issue as defined in `docs/GIT_WORKFLOW.md`.
 
+## Working Directory and Worktrees
+
+The repository has exactly one canonical working directory. All implementation and documentation work must happen inside the existing repository directory. These rules apply to Codex and all other AI agents and coding tools.
+
+Use Git branches to isolate tasks, switching branches within the canonical working directory. If another branch is required, create or switch to it inside this repository. Never create additional project copies or working directories, use or create Git worktrees (`git worktree`), clone the repository elsewhere, or create directories such as `Flow-issue-*`, `Flow-feature-*`, or similar project copies. Never move the project or change its canonical working directory.
+
+Before starting work, verify the repository root, inspect the current Git branch and working-tree status, and check for uncommitted changes. Preserve existing work before switching branches. Never overwrite, discard, or reset uncommitted changes without explicit human approval. If uncommitted changes may conflict with the requested task or a branch switch, stop and ask the user how to proceed.
+
+**One repository directory, one working copy, multiple Git branches. No additional worktrees or project copies.**
+
 ---
 
 ## 5. Architecture
