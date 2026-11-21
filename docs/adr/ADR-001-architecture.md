@@ -80,6 +80,11 @@ Examples:
 
 Application operations coordinate domain logic and required dependencies.
 
+The Application layer owns the `DailyPlan` read model and assembles it
+from relevant Domain data, including tasks, time blocks, available time,
+and user preferences. It coordinates planning operations and validates
+and applies accepted proposals through explicit Application operations.
+
 Application operations are the primary entry point for product actions
 from both the user interface and AI capabilities.
 
@@ -93,9 +98,9 @@ Examples:
 
 - Task
 - Project
-- DailyPlan
-- Schedule
-- PlanningRules
+- TimeBlock
+- UserPreferences
+- SchedulingPolicy (owned by Task)
 
 Domain models should use standard Swift types and must remain independent
 of UI, persistence, and AI frameworks.
@@ -171,6 +176,10 @@ The intended flow is:
 
 The same Application operations should be usable by both UI-driven
 actions and AI-driven actions where appropriate.
+
+For planning changes, AI may request planning operations but must follow
+the proposal and validation flow. It cannot directly modify persistence
+or bypass explicit user acceptance before a proposal is applied.
 
 This ensures that AI cannot bypass domain validation or application
 rules.
