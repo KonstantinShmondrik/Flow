@@ -102,7 +102,17 @@ The MVP must support:
 - set priority;
 - set duration;
 - set due date;
+- set scheduling policy (`flexible` or `fixed`; default: `flexible`);
 - add notes.
+
+Tasks represent both actionable work and fixed commitments, such as appointments, meetings, and calls.
+A Task's scheduling policy determines whether the Planning Engine may automatically
+move it. A `TimeBlock` defines the actual scheduled time interval; setting
+a Task to `fixed` does not create a TimeBlock or assign a time. A fixed
+commitment has a specific scheduled time only when it has an associated
+TimeBlock. Users may still manually edit or move fixed Tasks. A due date is
+a deadline and does not make a Task fixed. All TimeBlocks for a Task follow
+that Task's scheduling policy.
 
 ### Inbox
 
@@ -205,10 +215,16 @@ Primary entities:
 - Task
 - Project
 - TimeBlock
-- DailyPlan
 - UserPreferences
 
 The domain layer must remain independent from SwiftData and SwiftUI.
+
+`Task` owns its scheduling policy. `DailyPlan` is an Application-level
+derived read model assembled from relevant tasks, time blocks, available
+time, and user preferences; it is not a separate Domain entity or source
+of truth. The Planning Engine produces a temporary `PlanProposal`. A
+proposal does not modify persisted data, must be validated, and requires
+explicit user acceptance before its changes are applied.
 
 ---
 

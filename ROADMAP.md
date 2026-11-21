@@ -72,7 +72,8 @@ Deliverables:
 - Task;
 - Project;
 - TimeBlock;
-- DailyPlan;
+- UserPreferences;
+- Task scheduling policy;
 - CRUD operations;
 - domain validation;
 - tests.
@@ -85,14 +86,20 @@ Goal:
 
 Build deterministic planning logic before introducing AI.
 
-The planning engine should be able to:
+The Planning Engine is deterministic and independent of AI. It should be
+able to:
 
 - find available time;
-- schedule tasks;
+- treat fixed commitments as Tasks whose scheduled TimeBlocks are not
+  moved automatically;
+- schedule flexible Tasks;
 - detect conflicts;
-- move tasks;
-- calculate remaining capacity;
-- reschedule tasks.
+- calculate available time and remaining capacity;
+- propose schedule changes, including moving and rescheduling Tasks.
+
+Planning changes are returned as temporary proposals, validated before
+application, and applied only after explicit user acceptance. The Planning
+Engine does not directly access persistence.
 
 AI must not be required for core planning.
 
