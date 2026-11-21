@@ -102,15 +102,18 @@ The MVP must support:
 - set priority;
 - set duration;
 - set due date;
+- set scheduling policy (`flexible` or `fixed`; default: `flexible`);
 - add notes.
 
 Tasks represent both actionable work and fixed commitments that occupy
-scheduled time, such as appointments, meetings, and calls. Each Task has
-a scheduling policy: `flexible` Tasks may be moved automatically by the
-Planning Engine, while `fixed` Tasks must not be moved automatically.
-The default policy is `flexible`; users may still manually edit or move
-fixed Tasks. A due date is a deadline and does not make a Task fixed.
-All TimeBlocks for a Task follow that Task's scheduling policy.
+scheduled time, such as appointments, meetings, and calls. A Task's
+scheduling policy determines whether the Planning Engine may automatically
+move it. A `TimeBlock` defines the actual scheduled time interval; setting
+a Task to `fixed` does not create a TimeBlock or assign a time. A fixed
+commitment has a specific scheduled time only when it has an associated
+TimeBlock. Users may still manually edit or move fixed Tasks. A due date is
+a deadline and does not make a Task fixed. All TimeBlocks for a Task follow
+that Task's scheduling policy.
 
 ### Inbox
 

@@ -72,6 +72,7 @@ Deliverables:
 - Task;
 - Project;
 - TimeBlock;
+- UserPreferences;
 - Task scheduling policy;
 - CRUD operations;
 - domain validation;

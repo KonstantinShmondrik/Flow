@@ -35,15 +35,20 @@ acceptance before Application operations apply their changes.
 
 The default policy is `flexible`. A user may still manually edit or move
 a fixed Task. A due date is a deadline and does not make a Task fixed.
-All TimeBlocks associated with a Task follow its policy; TimeBlock has no
-independent policy or override.
+The policy determines whether the Planning Engine may automatically move
+the Task; it does not create a TimeBlock or assign a time. A `TimeBlock`
+defines the actual scheduled time interval, so a fixed Task has a specific
+scheduled time only when it has an associated TimeBlock. All TimeBlocks
+associated with a Task follow its policy; TimeBlock has no independent
+policy or override.
 
 ### Fixed commitments
 
 Appointments, meetings, scheduled calls, and similar commitments are
 represented as `Task` instances with the `fixed` scheduling policy.
 The MVP does not introduce a separate `CalendarEvent` entity.
-`TimeBlock` remains associated with its Task through `TaskID`.
+`TimeBlock` remains associated with its Task through `TaskID`; a fixed
+policy alone does not assign the commitment a scheduled time.
 
 ### DailyPlan
 
