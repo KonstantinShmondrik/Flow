@@ -136,6 +136,30 @@ final class TaskPersistenceModel {
         )
     }
 
+    func update(from task: Task, project: ProjectPersistenceModel?) {
+        title = task.title
+        dueDateYear = task.dueDate?.year
+        dueDateMonth = task.dueDate?.month
+        dueDateDay = task.dueDate?.day
+        preferredDateYear = task.preferredTime?.date?.year
+        preferredDateMonth = task.preferredTime?.date?.month
+        preferredDateDay = task.preferredTime?.date?.day
+        preferredTimePeriod = task.preferredTime.map(Self.encode)
+        priority = task.priority.map(Self.encode)
+        if let estimatedDuration = task.estimatedDuration {
+            let components = estimatedDuration.components
+            estimatedDurationSeconds = components.seconds
+            estimatedDurationAttoseconds = components.attoseconds
+        } else {
+            estimatedDurationSeconds = nil
+            estimatedDurationAttoseconds = nil
+        }
+        notes = task.notes
+        isCompleted = task.isCompleted
+        schedulingPolicy = Self.encode(task.schedulingPolicy)
+        self.project = project
+    }
+
     private static func encode(_ policy: SchedulingPolicy) -> String {
         switch policy {
         case .flexible: "flexible"

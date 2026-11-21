@@ -18,6 +18,9 @@
 		A10000000000000000000009 /* DomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* DomainModelTests.swift */; };
 		A1000000000000000000000A /* FlowPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* FlowPersistence.swift */; };
 		A1000000000000000000000B /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* PersistenceTests.swift */; };
+		A1000000000000000000000C /* LocalRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* LocalRepositories.swift */; };
+		A1000000000000000000000D /* SwiftDataLocalRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* SwiftDataLocalRepositories.swift */; };
+		A1000000000000000000000E /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* RepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A20000000000000000000011 /* DomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModelTests.swift; sourceTree = "<group>"; };
 		A20000000000000000000012 /* FlowPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowPersistence.swift; sourceTree = "<group>"; };
 		A20000000000000000000013 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* LocalRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepositories.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* SwiftDataLocalRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataLocalRepositories.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		A40000000000000000000005 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				A40000000000000000000014 /* Repositories */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 				A20000000000000000000005 /* FlowSmokeTests.swift */,
 				A20000000000000000000011 /* DomainModelTests.swift */,
 				A20000000000000000000013 /* PersistenceTests.swift */,
+				A20000000000000000000016 /* RepositoryTests.swift */,
 			);
 			path = FlowTests;
 			sourceTree = "<group>";
@@ -163,8 +171,17 @@
 			isa = PBXGroup;
 			children = (
 				A20000000000000000000012 /* FlowPersistence.swift */,
+				A20000000000000000000015 /* SwiftDataLocalRepositories.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000014 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000014 /* LocalRepositories.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +283,8 @@
 				A10000000000000000000007 /* Project.swift in Sources */,
 				A10000000000000000000008 /* TimeBlock.swift in Sources */,
 				A1000000000000000000000A /* FlowPersistence.swift in Sources */,
+				A1000000000000000000000C /* LocalRepositories.swift in Sources */,
+				A1000000000000000000000D /* SwiftDataLocalRepositories.swift in Sources */,
 			);
 		};
 		A30000000000000000000005 /* Sources */ = {
@@ -274,6 +293,7 @@
 				A10000000000000000000004 /* FlowSmokeTests.swift in Sources */,
 				A10000000000000000000009 /* DomainModelTests.swift in Sources */,
 				A1000000000000000000000B /* PersistenceTests.swift in Sources */,
+				A1000000000000000000000E /* RepositoryTests.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
