@@ -163,3 +163,15 @@ import Testing
     #expect(task.estimatedDuration == duration)
     #expect(Task(title: "No estimate").estimatedDuration == nil)
 }
+
+@Test func taskSchedulingPolicyDefaultsToFlexible() {
+    #expect(Task(title: "Call the dentist").schedulingPolicy == .flexible)
+}
+
+@Test func taskCanBeCreatedWithFixedSchedulingPolicy() {
+    var task = Task(title: "Dentist appointment")
+
+    task.schedulingPolicy = .fixed
+
+    #expect(task.schedulingPolicy == .fixed)
+}
