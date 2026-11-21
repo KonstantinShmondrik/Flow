@@ -2,6 +2,8 @@
 
 Before repository work, read and follow [`AI_RULES.md`](AI_RULES.md). It is the authoritative source for engineering rules; this file is an entry point, not a replacement.
 
+Follow the `Working Directory and Worktrees` section in `AI_RULES.md` for repository location, branch, and uncommitted-change rules.
+
 ## Before implementation
 
 - Before any GitHub Issue operation, follow the browser-only procedure in the `GitHub Issue Management` section of [`AI_RULES.md`](AI_RULES.md). Read the current Issue, including its scope and acceptance criteria, through the GitHub website.
