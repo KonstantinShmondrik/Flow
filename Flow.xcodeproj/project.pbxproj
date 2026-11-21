@@ -16,6 +16,8 @@
 		A10000000000000000000007 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* Project.swift */; };
 		A10000000000000000000008 /* TimeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* TimeBlock.swift */; };
 		A10000000000000000000009 /* DomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* DomainModelTests.swift */; };
+		A1000000000000000000000A /* FlowPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* FlowPersistence.swift */; };
+		A1000000000000000000000B /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* PersistenceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		A20000000000000000000009 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		A20000000000000000000010 /* TimeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBlock.swift; sourceTree = "<group>"; };
 		A20000000000000000000011 /* DomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModelTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000012 /* FlowPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowPersistence.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		A40000000000000000000007 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				A40000000000000000000013 /* Persistence */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -149,8 +154,17 @@
 			children = (
 				A20000000000000000000005 /* FlowSmokeTests.swift */,
 				A20000000000000000000011 /* DomainModelTests.swift */,
+				A20000000000000000000013 /* PersistenceTests.swift */,
 			);
 			path = FlowTests;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000013 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000012 /* FlowPersistence.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +265,7 @@
 				A10000000000000000000006 /* Task.swift in Sources */,
 				A10000000000000000000007 /* Project.swift in Sources */,
 				A10000000000000000000008 /* TimeBlock.swift in Sources */,
+				A1000000000000000000000A /* FlowPersistence.swift in Sources */,
 			);
 		};
 		A30000000000000000000005 /* Sources */ = {
@@ -258,6 +273,7 @@
 			files = (
 				A10000000000000000000004 /* FlowSmokeTests.swift in Sources */,
 				A10000000000000000000009 /* DomainModelTests.swift in Sources */,
+				A1000000000000000000000B /* PersistenceTests.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */

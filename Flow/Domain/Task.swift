@@ -14,6 +14,11 @@ enum TaskPriority: Equatable, Sendable {
     case high
 }
 
+enum SchedulingPolicy: Equatable, Sendable {
+    case flexible
+    case fixed
+}
+
 enum PreferredTimePeriod: Equatable, Sendable {
     case anytime
     case morning
@@ -41,6 +46,7 @@ struct Task: Equatable, Sendable {
     var estimatedDuration: Duration?
     var notes: String?
     var isCompleted: Bool
+    var schedulingPolicy: SchedulingPolicy
 
     static func == (lhs: Task, rhs: Task) -> Bool {
         lhs.id == rhs.id
@@ -55,7 +61,8 @@ struct Task: Equatable, Sendable {
         priority: TaskPriority? = nil,
         estimatedDuration: Duration? = nil,
         notes: String? = nil,
-        isCompleted: Bool = false
+        isCompleted: Bool = false,
+        schedulingPolicy: SchedulingPolicy = .flexible
     ) {
         self.id = id
         self.title = title
@@ -66,5 +73,6 @@ struct Task: Equatable, Sendable {
         self.estimatedDuration = estimatedDuration
         self.notes = notes
         self.isCompleted = isCompleted
+        self.schedulingPolicy = schedulingPolicy
     }
 }
